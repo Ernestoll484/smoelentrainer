@@ -1,0 +1,35 @@
+div.container, div.row, form {
+    clear: both;
+    }
+    div.row > div {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 170px;
+    padding: 30px;
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px grey;
+    vertical-align: bottom;
+    }
+    div.row > div > img {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    bottom: 30px;
+    }
+    .visible {
+    visibility: visible;
+    }
+    .hidden {
+    visibility: hidden;
+    }
+    .done {
+    visibility: visible;
+    }
+   div.button > button{
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    bottom: 30px;
+    }
