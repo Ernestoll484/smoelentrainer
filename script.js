@@ -22,3 +22,4 @@ const player = document.querySelectorAll(".players");
 const namePlayer = document.querySelectorAll(".namePlayer");
 
 
+
