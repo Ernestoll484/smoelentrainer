@@ -1,0 +1,55 @@
+body{
+	background-color: black;
+}
+
+#group{
+	width: 1200px;
+	margin-left: 300px;
+}
+
+#names button{
+    margin:0;
+    padding:0;
+    margin-left: 10px;
+    font-size: 36px;
+    display: inline;
+    line-height: 220px;
+}
+
+.borders{
+	outline: 2px solid white;
+	outline-offset: -2px;
+}
+
+.bordersName{
+	outline: 2px solid white;
+	outline-offset: -2px;
+}
+
+
+.goodBorder{
+	outline: 2px solid green;
+	outline-offset: -2px;
+
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+     opacity: 0;
+}
+
+.wrongBorder{
+	outline: 2px solid red;
+	outline-offset: -2px;
+}
+
+.goodBorder{
+	outline: 2px solid green;
+	outline-offset: -2px;
+
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+     opacity: 0;
+}
