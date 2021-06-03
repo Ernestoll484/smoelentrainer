@@ -1,15 +1,12 @@
-const button = document.querySelector('.submit');
-button.onclick = submit
+const button = document.getElementById("save");
+button.onclick = save;
 
-//gets data from the form and submits it
-function submit(){
-	var formValue = document.forms.form;
-	var formData = new FormData(formValue);
-	var time = formData.get("timer");
-	var playerAmount = formData.get("players");
-	//console.log(playersSet);
-	//console.log(time);
-	localStorage.setItem('gameTime', time);	
-	localStorage.setItem('playerAmount', playerAmount);
-	window.location.assign('smoelentrainer.html');
+function save(){
+	var formValues = document.forms.formSettings;
+	var formData = new FormData(formValues);
+	var time = formData.get("time");
+	var people = formData.get("people");
+	localStorage.setItem("GameTime",time);
+	localStorage.setItem("GamePeople",people);
+	setTimeout("location.href = 'index.html';");
 }
