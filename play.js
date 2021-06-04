@@ -228,21 +228,6 @@ function resetAnimation(){
 }
 
 
-var historySet = false;
-localStorage.setItem("HistorySet", historySet);
-var maxScore = localStorage.getItem("GamePeople");
-function gameEnding(){
-	historySet = true;
-	var date = new Date().toLocaleString();
-	localStorage.setItem("Score",score);
-	localStorage.setItem("Maxscore",maxScore);
-	localStorage.setItem("Tries",tries);
-	localStorage.setItem("Date",date);
-	localStorage.setItem("HistorySet", historySet);
-	localStorage.setItem("PlayersCorrect", JSON.stringify(usedPlayers));
-	localStorage.setItem("TimeLeft", timerTime);
-	setTimeout("location.href = 'ending.html';",500);
-}
 
 
 // Removes not used buttons
