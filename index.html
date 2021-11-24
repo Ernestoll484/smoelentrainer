@@ -9,6 +9,132 @@
 	<section class="col-12">
 		<h3 class="text-center mt-3 text-danger">Smoelentrainer</h3>
 	</section>
+	 <div id="startPagina">
+
+            <button id="startKnop">Start</button>
+            <button id="instellingenKnop">Instellingen</button>
+            <button id="geschiedenisKnop">Geschiedenis</button>
+            
+    </div>
+    <!-- Eind startPagina-->
+
+    <!-- Begin instellingenPagina-->
+    <div id="instellingenPagina">
+	<h1 class="text-center">Settings</h1>
+	<form id="formSettings">
+	  	<div class="col-3 mx-auto align-items-center">
+	    	<div class="col-auto my-1">
+	      	  <label class="mr-sm-2 mt-5" for="inlineFormCustomSelect">Players:</label>
+	      		<select name="people" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+	        		<option value="4">4</option>
+	        		<option value="5">5</option>
+	        		<option value="6">6</option>
+	        		<option value="7">7</option>
+	        		<option value="8">8</option>
+	        		<option selected value="9">9</option>
+	      		</select>
+	    	</div>
+	    	<div class="col-auto my-1">
+	      		<div class="custom-control custom-checkbox mr-sm-2 p-0">
+	      			<label class="mr-sm-2" for="inlineFormCustomSelect">Time in seconds:</label>
+	        		<input class="form-control w-25" type="number" id="tentacles" name="time" value="120"
+       					min="30" max="180">
+	      		</div>
+	    	</div>
+	    	<div class="col-auto my-1">
+	      		<button id="save" type="submit" class="col-2 btn btn-danger btn-lg mx-auto d-block mt-3">Save </button>
+	    	</div>
+	  	</div>
+	</form>
+<script type="text/javascript" src="settings.js"></script>
+    </div>
+    <!-- Eind instellingenPagina-->
+
+    <!-- Begin geschiedenisPagina-->
+   <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Bekijk je scores</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a>history</a>
+    </div>
+</div>
+
+ 
+<table border="0" cellspacing="0" width="100%">
+<tr style="font-family: Verdana, Tahoma, Arial; font-size: x-small; font-weight:bold">
+<td ID="Klok0" width=""></td>
+</tr>
+</table>
+	<title>Smoelentrainer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>	
+	<h1 class="text-center">GAME COMPLETED!</h1>
+	<p class="text-center">Score: <span  id="scoreText"></span></p>
+	<p class="text-center">Tries: <span id="triesText"></span></p>
+
+	<a href="index.html" class="col-2 btn btn-dark btn-lg mx-auto d-block" role="button" aria-disabled="true">Leave game</a>
+<script type="text/javascript" src="ending.js"> </script>
+    <!-- Einde geschiedenisPagina-->
+
+    <!-- Begin blindeVlekPagina-->
+    <div id="blindeVlekPagina">
+        <div id="blindeVlekGeschiedenis"></div>
+        <button id="terugKnop3">terug</button>
+    </div>
+    <!-- Einde blindeVlekPagina-->
+
+    <!-- Begin smoelenTrainer-->
+    <div id="smoelenTrainer">
+       <section class="row justify-content-between col-11 mx-auto">
+		<h6 class="col-4 p-0">Score: <span id="scoreCounter">0</span></h6>
+		<h5 class="col-4 p-0 text-center"> <span id="timer"></span></h6>
+		<h6 class="col-4 p-0 text-right">Tries: <span id="triesCounter">0</span></h6>
+		
+	</section>
+
+	<section class="row justify-content-between mx-auto mb-5 col-11">
+		<div class="col-12 p-0 mx-auto bg-dark justify-content-center">
+		</div>
+
+		
+		<div class="col-6 row mt-2">
+			<img id="img-0" class="w-25 button d-block mr-2" src="">
+			<img id="img-1" class="w-25 button d-block mr-2" src="">
+			<img id="img-2" class="w-25 button d-block mr-2" src="">
+		</div>
+		<div class="col-6 row mt-2 justify-content-end">
+		  <a id="btn-0" class="button-2 w-25 text-white d-block bg-danger d-flex flex-wrap align-content-center justify-content-center mr-2"></a>
+		  <a id="btn-1" class="button-2 w-25 text-white d-block bg-danger d-flex flex-wrap align-content-center justify-content-center mr-2"></a>
+		  <a id="btn-2" class="button-2 w-25 text-white d-block bg-danger d-flex flex-wrap align-content-center justify-content-center mr-2"></a>
+		</div>
+
+		<div class="col-6 row mt-1">
+		  <img id="img-3" class="w-25 button d-block mr-2" src="">
+		  <img id="img-4" class="w-25 button d-block mr-2" src="">
+		  <img id="img-5" class="w-25 button d-block mr-2" src="">
+		</div>
+
+		<div class="col-6 row mt-1 justify-content-end">
+		 <a id="btn-3" class="button-2 w-25 text-white d-block bg-danger d-flex flex-wrap align-content-center justify-content-center mr-2"></a>
+		 <a id="btn-4" class="button-2 w-25 text-white d-block bg-danger d-flex flex-wrap align-content-center justify-content-center mr-2"></a>
+		 <a id="btn-5" class="button-2 w-25 text-white d-block bg-danger d-flex flex-wrap align-content-center justify-content-center mr-2"></a>
+		</div>
+
+
+		<div class="col-6 row mt-1">
+		 <img id="img-6" class="w-25 button d-block mr-2" src="">
+		 <img id="img-7" class="w-25 button d-block mr-2" src="">
+		 <img id="img-8" class="w-25 button d-block mr-2" src="">
+		</div>
+
+		<div class="col-6 row mt-1 justify-content-end">
+		<a id="btn-6" class="button-2 w-25 text-white d-block bg-danger d-flex flex-wrap align-content-center justify-content-center mr-2"></a>
+		<a id="btn-7" class="button-2 w-25 text-white d-block bg-danger d-flex flex-wrap align-content-center justify-content-center mr-2"></a>
+		<a id="btn-8" class="button-2 w-25 text-white d-block bg-danger d-flex flex-wrap align-content-center justify-content-center mr-2"></a>
+	    </div>
+	    <a href="" class="col-2 btn btn-dark btn-lg mx-auto d-block" role="button" aria-disabled="true">Try again</a>
+	</section>
 
 	<section class="col-12">
 		<img src="img/groepsfoto.png" class="rounded mx-auto d-block mt-5" alt="Bayern Munchen">
@@ -22,4 +148,4 @@
 <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
-© 2021 GitHub, Inc.
+2021 
